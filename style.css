@@ -1,0 +1,265 @@
+
+body {
+
+    background-color:darkorchid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+}
+
+.materialContainer {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    z-index: 5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    color:darkorchid;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input {
+    margin-top: 20px;
+    position: relative;
+}
+
+.input label {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.input input:focus {
+    border-color: darkorchid;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(77, 158, 203, 0.1);
+}
+
+.input .spin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: darkorchid;
+    transition: width 0.4s;
+}
+
+.input input:focus+.spin {
+    width: 100%;
+}
+
+.button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background: darkorchid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.button button:hover {
+    background: darkorchid;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .materialContainer {
+        padding: 10px;
+    }
+
+    .box {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .input input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .materialContainer {
+        padding: 5px;
+        width: 320px;
+    }
+
+    .box {
+        padding: 30px 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .input input {
+        font-size: 12px;
+    }
+
+    .button button {
+        font-size: 12px;
+    }
+}
+
+.login-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.activebtn a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.activebtn a:hover {
+    color: white;
+}
+
+
+.btn a{
+        color: #4d9ecb;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+.btn a:hover{
+    color: white;
+
+}
+
+.anchor {
+    color: #4d9ecb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.anchor:hover {
+    color: #36d1eb;
+    text-decoration: underline;
+}
+
+.activebtn {
+    background-color: #4d9ecb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.activebtn:hover {
+    background-color: #2185ba;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #47b1ea;
+    border: 2px solid #4d9ecb;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.btn:hover {
+    background-color: #36d1eb;
+    color: #ffffff;
+    border: 2px solid grey;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285F4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.google-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-btn:hover {
+    background-color: #357ae8;
+}
